@@ -52,6 +52,7 @@ body{
   border-radius: 50%;
   top: 2.5em;
   left: 3em;
+  animation: blink 4s infinite step-start 0s;
 }
 .eye-right{
   width: 10px;
@@ -62,6 +63,7 @@ body{
   border-radius: 50%;
   top: 1.9em;
   right: 1em;
+  animation: blink 4s infinite step-start 0s;
 }
 .center{
   position: relative;
@@ -135,4 +137,13 @@ a{
   text-decoration: none;
   color: #9c6c4a;
   text-transform: uppercase;
+}
+@keyframes blink {
+  0%, 100%{
+    background: transparent;
+    border-bottom: 2px solid #333;
+  }
+  10%, 70% {
+    background-color: #333;
+   }
 }
